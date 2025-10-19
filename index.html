@@ -58,15 +58,25 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Nama" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Pesan" required></textarea>
-            <button type="submit">Kirim</button>
-        </form>
-    </section>
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form id="contact-form" action="https://formsubmit.co/yanuar.b@gmail.com" method="POST">
+        <!-- Pengaturan FormSubmit -->
+        <input type="hidden" name="_subject" value="Pesan Baru dari Website Portofolio">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <input type="text" name="nama" placeholder="Nama" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="pesan" placeholder="Pesan" required></textarea>
+
+        <button type="submit">Kirim</button>
+    </form>
+
+    <p id="status"></p>
+</section>
+
 
     <!-- Footer -->
     <footer>
@@ -76,6 +86,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
